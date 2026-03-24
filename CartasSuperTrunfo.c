@@ -10,14 +10,16 @@ int main() {
     //variaveis carta 01
 
       char estado1;
-      char codigo1[4], cidade1[30];
+      char codigo1[4];
+      char cidade1[30];
       int populacao1, pontosTuristicos1;
       float pib1, area1;
 
     //variaveis carta 02
       
       char estado2;
-      char codigo2[4], cidade2[30];
+      char codigo2[10];
+      char cidade2[30];
       int populacao2, pontosTuristicos2;
       float pib2, area2;
 
@@ -47,8 +49,8 @@ int main() {
    printf("Digite a letra do Estado: ");
    scanf("%c", &estado1);
 
-   printf("digite o código da carta: ");
-   scanf("%s", &codigo1);
+   printf("Digite o código: ");
+   scanf("%s", codigo1);
 
    printf("Digite o nome da cidade: ");
    scanf("%s", cidade1);
@@ -70,28 +72,28 @@ int main() {
 
    // Coleta dos dados da carta 02
 
-    printf("\nDigite os dados da carta 02: ");
+    printf("\nDigite os dados da carta 02: \n\n\n");
    
     printf("digite a letra do Estado: ");
-    scanf("%c", &estado2);
+    scanf("\n%c", &estado2);
 
-    printf("Digite o código da carta: ");
-    scanf("%s", &codigo2);
+    printf("Digite o código: ");
+    scanf("\n%s", codigo2); 
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", cidade2);
+    scanf("\n%s", cidade2);
 
     printf("Digite a populacao da cidade: ");
-    scanf("%i", &populacao2);
+    scanf("\n%i", &populacao2);
 
     printf("Digite a área da cidade: ");
-    scanf("%f", &area2);
+    scanf("\n%f", &area2);
 
     printf("Digite o PIB da cidade: ");
-    scanf("%f", &pib2);
+    scanf("\n%f", &pib2);
 
     printf("Digite os pontos turísticos da cidade: ");
-    scanf("%i", &pontosTuristicos2);
+    scanf("\n%i", &pontosTuristicos2);
 
 
    // Área para exibição dos dados da cidade
@@ -115,7 +117,7 @@ int main() {
    printf("População: %i\n", populacao2);
    printf("Área: %2.f km2\n", area2);
    printf("PIB: %2.f\n", pib2);
-   printf("Pontos turísticos: %i\n", pontosTuristicos2);
+   printf("Pontos turísticos: %i\n\n\n\n\n", pontosTuristicos2);
 
    return 0;
 } 
